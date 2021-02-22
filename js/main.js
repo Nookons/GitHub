@@ -55,3 +55,21 @@ inst.owlCarousel({
         }
     }
 });
+
+let burgerMenu = document.querySelector('.burger-menu');
+let menu = document.querySelector('.menu');
+let burger = document.getElementById('burger');
+
+burger.addEventListener('click', function () {
+    burger.classList.toggle ('active');
+    menu.classList.toggle   ('active');
+})
+
+window.addEventListener('resize', function () {
+    const x = document.documentElement.clientWidth;
+
+    if (x > 1080) {
+        burger.classList.remove ('active');
+        menu.classList.remove('active');
+    }
+})
