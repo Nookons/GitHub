@@ -1,5 +1,4 @@
 @import url("https://googleapis.com/css2?family=Karla:wght@200;300;400;500;600;700;800&display=swap");
-
 body {
   margin: 0;
   font-family: "Josefin Sans", sans-serif;
@@ -887,6 +886,78 @@ h1, h2, h3, h4, h5, h6 {
 
 .inst-img {
   max-width: 100%;
+  z-index: 1;
+}
+
+.item-img {
+  position: relative;
+}
+
+.item-img .over-img {
+  position: absolute;
+  width: 100%;
+  height: 99%;
+  top: -100%;
+  left: 0;
+  z-index: 5;
+}
+
+.item-img .over-img a {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateY(-50%) translateX(-50%);
+      -ms-transform: translateY(-50%) translateX(-50%);
+          transform: translateY(-50%) translateX(-50%);
+  display: block;
+  width: 301px;
+  border-radius: 30px;
+  padding: 20px 20px;
+  text-decoration: none;
+  font-size: 21px;
+  font-weight: 400;
+  line-height: 22px;
+  background-color: #ffffff;
+  border: 2px solid #ffffff;
+  color: #0aa566;
+}
+
+.item-img .over-img a img {
+  position: absolute;
+  right: 5%;
+  top: 30%;
+}
+
+.item-img .over-img a:hover {
+  border: 2px solid #0aa566;
+  -webkit-box-shadow: inset 0 0 10px #0aa566;
+          box-shadow: inset 0 0 10px #0aa566;
+}
+
+.item-img .over-img a:hover img {
+  -webkit-transform: rotate(360deg);
+      -ms-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+
+.item-img .over-img:before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: -100%;
+  left: 0;
+  background-color: #0aa566;
+  opacity: 35%;
+  z-index: -1;
+}
+
+.item-img:hover .over-img {
+  top: 0;
+}
+
+.item-img:hover .over-img:before {
+  top: 0;
 }
 
 .instagram__inner h1 {
@@ -898,7 +969,9 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
   max-width: 182px;
   margin: 0 auto;
-  padding: 50px 0;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  cursor: pointer;
 }
 
 .instagram__inner h1 img {
@@ -908,4 +981,8 @@ h1, h2, h3, h4, h5, h6 {
       -ms-transform: translateY(-50%);
           transform: translateY(-50%);
   left: -15%;
+}
+
+.instagram__inner h1:hover {
+  text-shadow: 1px 2px 5px #0aa566;
 }

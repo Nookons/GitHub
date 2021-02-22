@@ -4,7 +4,7 @@ product.owlCarousel({
     loop:true,
     margin:0,
     autoplay:true,
-    autoplayTimeout:2500,
+    autoplayTimeout:750,
     autoplayHoverPause:true,
     responsive:{
         0:{
@@ -32,7 +32,7 @@ inst.owlCarousel({
     loop:true,
     margin: 1,
     autoplay:true,
-    autoplayTimeout:2500,
+    autoplayTimeout:500,
     autoplayHoverPause:true,
     responsive:{
         0:{
