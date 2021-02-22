@@ -31,15 +31,12 @@ inst.owlCarousel({
     items:5,
     loop:true,
     margin: 1,
-    autoplay:true,
+    autoplay:false,
     autoplayTimeout:500,
-    autoplayHoverPause:true,
+    autoplayHoverPause:false,
     responsive:{
         0:{
             items:1
-        },
-        400: {
-            items: 2
         },
         700:{
             items: 3

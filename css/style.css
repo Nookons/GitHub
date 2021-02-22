@@ -484,6 +484,18 @@ h1, h2, h3, h4, h5, h6 {
   padding-top: 100px;
 }
 
+@media screen and (max-width: 1140px) {
+  .product {
+    padding-top: 50px;
+  }
+}
+
+@media screen and (max-width: 522px) {
+  .product {
+    padding-top: 25px;
+  }
+}
+
 .product .product-card {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -582,19 +594,12 @@ h1, h2, h3, h4, h5, h6 {
   grid-template-columns: repeat(2, 1fr);
 }
 
-@media screen and (max-width: 1199px) {
-  .product__inner {
-    grid-template-columns: repeat(1, 1fr);
-  }
-}
-
 .product__inner .product-mark {
   position: relative;
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 1140px) {
   .product__inner .product-mark {
-    opacity: 0;
     display: none;
   }
 }
@@ -610,39 +615,10 @@ h1, h2, h3, h4, h5, h6 {
   text-align: left;
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 1140px) {
   .product__inner .product-mark-info {
     text-align: center;
-  }
-  .product__inner .product-mark-info a {
-    margin: 0 auto;
-    margin-top: 50px;
-    margin-bottom: 50px;
-  }
-  .product__inner .product-mark-info h1 {
-    font-size: 45px;
-  }
-  .product__inner .product-mark-info .list-mark h5 {
-    font-size: 18px;
-  }
-}
-
-@media screen and (max-width: 991px) {
-  .product__inner .product-mark-info .list-mark h5 {
-    font-size: 16px;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .product__inner .product-mark-info .list-mark h5 {
-    font-size: 14px;
-  }
-  .product__inner .product-mark-info a {
-    font-size: 14px;
-    width: 280px;
-    margin: 0 auto;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    grid-column: 1/3;
   }
 }
 
@@ -651,6 +627,18 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 55px;
   font-weight: 400;
   margin-bottom: 50px;
+}
+
+@media screen and (max-width: 1140px) {
+  .product__inner .product-mark-info h1 {
+    font-size: 45px;
+  }
+}
+
+@media screen and (max-width: 522px) {
+  .product__inner .product-mark-info h1 {
+    font-size: 35px;
+  }
 }
 
 .product__inner .product-mark-info h1 span {
@@ -673,12 +661,47 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 21px;
   font-weight: 400;
   line-height: 22px;
-  margin-top: 25px;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+@media screen and (max-width: 1140px) {
+  .product__inner .product-mark-info .list-mark h5 {
+    margin-bottom: 50px;
+  }
+}
+
+@media screen and (max-width: 522px) {
+  .product__inner .product-mark-info .list-mark h5 {
+    font-size: 14px;
+    border-bottom: 1px solid #f7ae3b;
+    padding: 10px 0;
+    margin-bottom: 25px;
+  }
 }
 
 .product__inner .product-mark-info .list-mark h5 img {
+  position: absolute;
   max-width: 100%;
-  padding-right: 15px;
+  max-height: 100%;
+  top: 50%;
+  left: -6%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+@media screen and (max-width: 1140px) {
+  .product__inner .product-mark-info .list-mark h5 img {
+    left: 5%;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .product__inner .product-mark-info .list-mark h5 img {
+    left: 0;
+    max-width: 10px;
+  }
 }
 
 .product__inner .product-mark-info a {
@@ -697,6 +720,20 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
   z-index: 1;
   overflow: hidden;
+}
+
+@media screen and (max-width: 1140px) {
+  .product__inner .product-mark-info a {
+    margin: 0 auto 50px;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .product__inner .product-mark-info a {
+    width: 280px;
+    margin: 0 auto 50px;
+    font-size: 16px;
+  }
 }
 
 .product__inner .product-mark-info a img {
@@ -745,7 +782,15 @@ h1, h2, h3, h4, h5, h6 {
 
 .story__inner .story-left {
   text-align: left;
-  padding-top: 260px;
+  padding: 260px 15px 0px 15px;
+}
+
+@media screen and (max-width: 960px) {
+  .story__inner .story-left {
+    grid-column: 1/3;
+    text-align: center;
+    padding: 100px 15px 0px 15px;
+  }
 }
 
 .story__inner .story-left h1 {
@@ -753,6 +798,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 50px;
   font-weight: 400;
   line-height: 40px;
+  margin-bottom: 25px;
   letter-spacing: -1px;
 }
 
@@ -764,6 +810,13 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
   line-height: 35px;
   letter-spacing: 1px;
+}
+
+@media screen and (max-width: 960px) {
+  .story__inner .story-left p {
+    margin: 0 auto 50px;
+    max-width: 95%;
+  }
 }
 
 .story__inner .story-left a {
@@ -779,6 +832,18 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 22px;
   text-align: left;
   position: relative;
+}
+
+@media screen and (max-width: 960px) {
+  .story__inner .story-left a {
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .story__inner .story-left a {
+    width: 201px;
+  }
 }
 
 .story__inner .story-left a img {
@@ -804,10 +869,46 @@ h1, h2, h3, h4, h5, h6 {
   padding-bottom: 160px;
 }
 
-.story__inner .story-right .stamp {
+@media screen and (max-width: 960px) {
+  .story__inner .story-right {
+    grid-column: 1/3;
+  }
+}
+
+.story__inner .story-right .story-img-stamp {
+  position: relative;
+}
+
+.story__inner .story-right .story-img-stamp img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+@media screen and (max-width: 960px) {
+  .story__inner .story-right .story-img-stamp img {
+    margin: 0 auto;
+  }
+}
+
+.story__inner .story-right .story-img-stamp .stamp {
   position: absolute;
-  top: 20%;
+  top: 0;
   left: -20%;
+}
+
+@media screen and (max-width: 1190px) {
+  .story__inner .story-right .story-img-stamp .stamp {
+    top: 0;
+    left: -20%;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .story__inner .story-right .story-img-stamp .stamp {
+    top: 0;
+    left: 0;
+  }
 }
 
 .story__inner .story-right .owl-dots-me {
@@ -820,6 +921,12 @@ h1, h2, h3, h4, h5, h6 {
   position: absolute;
   bottom: 1%;
   right: -50%;
+}
+
+@media screen and (max-width: 960px) {
+  .story__inner .story-right .owl-dots-me {
+    display: none;
+  }
 }
 
 .story__inner .story-right .owl-dots-me .dots-me {
@@ -879,6 +986,18 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 40px;
 }
 
+@media screen and (max-width: 1190px) {
+  .note__inner h1 {
+    padding-top: 75px;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .note__inner h1 {
+    padding-top: 25px;
+  }
+}
+
 .note__inner h1 span {
   color: #f2612d;
   font-style: normal;
@@ -899,6 +1018,14 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
 }
 
+@media screen and (max-width: 960px) {
+  .note__inner .story {
+    display: grid !important;
+    grid-template-columns: 100%;
+    padding-top: 25px;
+  }
+}
+
 .note__inner .story .sarah {
   position: absolute;
   top: 0;
@@ -910,6 +1037,24 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 40px;
   letter-spacing: -4px;
   z-index: 1;
+  white-space: nowrap;
+}
+
+@media screen and (max-width: 960px) {
+  .note__inner .story .sarah {
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translateY(-50%) translateX(-50%);
+        -ms-transform: translateY(-50%) translateX(-50%);
+            transform: translateY(-50%) translateX(-50%);
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .note__inner .story .sarah {
+    top: 40%;
+    font-size: 100px;
+  }
 }
 
 .note__inner .story .story-info {
@@ -923,6 +1068,12 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: .5px;
   float: right;
   z-index: 2;
+}
+
+@media screen and (max-width: 460px) {
+  .note__inner .story .story-info {
+    line-height: 25px;
+  }
 }
 
 .note__inner .story .story-info span {
@@ -942,6 +1093,13 @@ h1, h2, h3, h4, h5, h6 {
   max-width: 100%;
   height: auto;
   padding-right: 200px;
+}
+
+@media screen and (max-width: 960px) {
+  .note__inner .story .story-avatar img {
+    margin: 0 auto;
+    padding-right: 0;
+  }
 }
 
 .note__inner .arrow-story {
@@ -966,6 +1124,12 @@ h1, h2, h3, h4, h5, h6 {
   padding: 100px 0;
 }
 
+@media screen and (max-width: 960px) {
+  .blog {
+    padding: 50px 0;
+  }
+}
+
 .blog__inner h1 {
   padding: 25px 0;
   color: #f7ae3b;
@@ -973,6 +1137,12 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
   line-height: 40px;
   text-align: left;
+}
+
+@media screen and (max-width: 1160px) {
+  .blog__inner h1 {
+    text-align: center;
+  }
 }
 
 .blog__inner .blog-content {
@@ -984,19 +1154,48 @@ h1, h2, h3, h4, h5, h6 {
   z-index: 2;
 }
 
+@media screen and (max-width: 1160px) {
+  .blog__inner .blog-content .blog-content-left {
+    grid-column: 1/3;
+  }
+}
+
 .blog__inner .blog-content .blog-content-left img {
   max-width: 100%;
   display: block;
+}
+
+@media screen and (max-width: 1160px) {
+  .blog__inner .blog-content .blog-content-left img {
+    margin: 0 auto;
+  }
 }
 
 .blog__inner .blog-content .blog-content-right {
   position: relative;
 }
 
+@media screen and (max-width: 1160px) {
+  .blog__inner .blog-content .blog-content-right {
+    grid-column: 1/3;
+    padding: 0;
+  }
+}
+
 .blog__inner .blog-content .blog-content-right img {
   position: absolute;
   top: 20%;
   left: -15%;
+}
+
+@media screen and (max-width: 1160px) {
+  .blog__inner .blog-content .blog-content-right img {
+    top: 5%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
 }
 
 .blog__inner .blog-content .blog-content-right h1 {
@@ -1010,12 +1209,24 @@ h1, h2, h3, h4, h5, h6 {
   padding-top: 20%;
 }
 
+@media screen and (max-width: 1160px) {
+  .blog__inner .blog-content .blog-content-right h1 {
+    text-align: center;
+  }
+}
+
 .blog__inner .blog-content .blog-content-right h6 {
   color: #1e1e1e;
   font-size: 14px;
   font-weight: 600;
   line-height: 35px;
   text-align: left;
+}
+
+@media screen and (max-width: 1160px) {
+  .blog__inner .blog-content .blog-content-right h6 {
+    text-align: center;
+  }
 }
 
 .blog__inner .blog-content .blog-content-right p {
@@ -1028,12 +1239,20 @@ h1, h2, h3, h4, h5, h6 {
   padding-left: 7%;
 }
 
+@media screen and (max-width: 1160px) {
+  .blog__inner .blog-content .blog-content-right p {
+    margin: 0 auto;
+    max-width: 100%;
+  }
+}
+
 .blog__inner .blog-content .blog-content-right p span {
   font-weight: 700;
   font-style: normal;
   letter-spacing: normal;
   line-height: normal;
   position: relative;
+  white-space: nowrap;
 }
 
 .blog__inner .blog-content .blog-content-right p span img {
