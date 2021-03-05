@@ -1,0 +1,60 @@
+// ==================================
+// Name: Me Landing
+// Version: 1.0.1
+// Creator: Kolomiets Dmitry
+// ==================================
+// ============================ Fonts
+$font-family-Fredoka:     'Fredoka One', cursive      !default;
+$font-family-Kosugi:      'Kosugi', sans-serif        !default;
+$font-family-Reggae:      'Reggae One', cursive       !default;
+
+
+// ============================ Color
+
+$color-white:                             #ffffff !default;
+$color-black:                             #000000 !default;
+$color-yellow:                            #f7ae3b !default;
+$color-yellow-2:                          #f7ae3b !default;
+$color-yellow-3:                          #f7ae3b !default;
+$color-orange:                            #f2612d !default;
+$color-gray:                              #cde8dd !default;
+$color-brown:                             #612a16 !default;
+$color-brown-2:                           #612a16 !default;
+$color-green:                             #0aa566 !default;
+$color-green-2:                           #4a9174 !default;
+
+
+
+
+
+
+// ============================ Transition
+
+$transition:          .15s all ease-in-out !default;
+
+
+// ==================================
+// Media queries breakpoints
+// ==================================
+//
+//Define the breakpoints at which your layout will change, adapting to different screen sizes.
+
+// Extra small screen / phone
+$screen-xs-min:                											480px !default;
+
+// Small screen / tablet
+$screen-sm-min:                											768px !default;
+
+// Medium screen / desktop
+$screen-md-min:                											992px !default;
+
+// Large screen / wide desktop
+$screen-lg-min:                											1200px !default;
+
+// Large scree / wider desktop
+$screen-lg-med:                     									1260px !default;
+
+// So media queries don't overlap when required, provide a maximum
+$screen-xs-max:             											($screen-sm-min - 1) !default;
+$screen-sm-max:                											($screen-md-min - 1) !default;
+$screen-md-max:                											($screen-lg-min - 1) !default;
