@@ -59,8 +59,8 @@
 }
 
 .owl-carousel .owl-item img {
-  /*display: block;*/
-  /*width: 100%; */
+  display: block;
+  width: 100%;
 }
 
 .owl-carousel .owl-nav.disabled,
