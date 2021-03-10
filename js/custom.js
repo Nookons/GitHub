@@ -1,3 +1,47 @@
+let getSpanTime = document.getElementById('time');
+let outerPage   = document.querySelector('.outer-page');
+
+
+function time() {
+
+    var time = new Date();
+    var h = time.getHours().toString();
+    var m = time.getMinutes().toString();
+    var s = time.getSeconds().toString();
+
+    if( h.length < 2) {
+        h = '0' + h;
+    }
+    if( m.length < 2) {
+        m = '0' + m;
+    }
+    if( s.length < 2) {
+        s = '0' + s;
+    }
+
+    var assemblyTime    = 'Время : ' + h + ":" + m + ":" + s;
+    var CreateColor     = '#' + h + m + s;
+
+    getSpanTime.innerText = assemblyTime;
+    outerPage.style.backgroundColor = CreateColor;
+
+    console.log(CreateColor);
+}
+
+function lastProject(e) {
+
+    let isBoss = confirm('К сожалению это последный сайт в колекции, желаете перейти к странице с работами?');
+
+    if (isBoss) {
+        document.location.href = "../work.html";
+    }
+    else {
+        e.preventDefault();
+    }
+}
+
+setInterval(time, 1000);
+
 (function($) { 
     "use strict"; 
     // aos animation
@@ -58,7 +102,7 @@
     
     // Custom Cursor
     var cursor = {
-        delay: 1,
+        delay: 3,
         _x: 0,
         _y: 0,
         endX: (window.innerWidth / 2),
