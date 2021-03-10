@@ -2,7 +2,7 @@
 
 /* Google Fonts */
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,900');
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap');
 
 
 /* ======================================
@@ -19,7 +19,7 @@
 	cursor: none;
 }
 body {
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	color: #fff;
 	line-height: 1;
 	height: 100%;
@@ -679,41 +679,27 @@ h1 {
 
 /* Title animation */
 .spin:after {
-	content: "";
-	animation: spin 15s linear infinite;
+	content: "PHP";
+	animation: spin 1.5s ease infinite;
+	text-shadow: 5px 5px 5px rgba(0,0,0, 0.5);
 	z-index: -1;
+	padding: 15px 25px;
+	text-align: center;	
 }
 @keyframes spin {
 	0% {
-		content: "Jqerry";
+		content: "PHP";
 	}
-	10% {
+	25% {
 		content: "HTML";
-	}
-	20% {
-		content: "CSS";
-	}
-	30% {
-		content: "JS";
-	}
-	40% {
-		content: "Jqerry";
 	}
 	50% {
-		content: "BootsTrap";
-	}
-	60% {
-		content: "WordPress";
-	}
-	70% {
-		content: "HTML";
-	}
-	80% {
 		content: "CSS";
 	}
-	90% {
+	75% {
 		content: "JS";
 	}
+
 }
 
 /* ======================================

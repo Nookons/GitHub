@@ -4,7 +4,7 @@
     // loader
     $("#loader").fakeLoader({
 
-        timeToHide:2500, //Time in milliseconds for fakeLoader disappear
+        timeToHide:0, //Time in milliseconds for fakeLoader disappear
         
         zIndex:"999",//Default zIndex
         
