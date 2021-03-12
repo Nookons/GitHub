@@ -9,6 +9,21 @@ function time() {
     var m = time.getMinutes().toString();
     var s = time.getSeconds().toString();
 
+    var timeZone = 'ltym';
+
+    if (h > 6 || h < 11) {
+        timeZone = "Доброе утро";
+    }
+    else if (h > 11 || h < 16) {
+        timeZone = "Добрый день";
+    }
+    else if (h > 16 || h < 22) {
+        timeZone = "Добрый вечер";
+    }
+    else if (h > 22 || h < 6) {
+        timeZone = "Доброй ночи";
+    }
+
     if( h.length < 2) {
         h = '0' + h;
     }
@@ -19,13 +34,13 @@ function time() {
         s = '0' + s;
     }
 
-    var assemblyTime    = 'Время : ' + h + ":" + m + ":" + s;
     var CreateColor     = '#' + h + m + s;
+
+    var assemblyTime    = timeZone + ': ' + h + ":" + m + ":" + s;
 
     getSpanTime.innerText = assemblyTime;
     outerPage.style.backgroundColor = CreateColor;
 
-    console.log(CreateColor);
 }
 
 function lastProject(e) {

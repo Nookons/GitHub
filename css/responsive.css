@@ -25,11 +25,18 @@
     .logo {
         display: none;
     }
+    .m-logo > a {
+        display: block;
+    }
+    .m-logo > a > img{
+        
+    }
     .m-logo{
         display: block;
         position: absolute;
         top: 20px;
         left: 50%;
+        transform: translateX(-50%);
         z-index: 10;
         height: 50px;
         margin-left: -20px; 
